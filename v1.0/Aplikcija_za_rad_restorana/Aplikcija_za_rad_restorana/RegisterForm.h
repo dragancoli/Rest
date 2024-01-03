@@ -227,6 +227,8 @@ namespace CppCLRWinFormsProject {
 #pragma endregion
 	private: System::Void RegisterForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		MaximizeBox = false;
+		ControlBox = false;
+		this->Text = "Restoran aplikacija";
 	}
 	private: System::Void LogInButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Hide();

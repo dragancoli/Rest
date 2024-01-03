@@ -100,6 +100,9 @@
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -175,7 +178,22 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\OneDrive\Desktop\accPic.png" />
+    <Image Include="add.png" />
+    <Image Include="add_button.BackgroundImage.png" />
     <Image Include="app.ico" />
+    <Image Include="button1.BackgroundImage.png" />
+    <Image Include="button2.BackgroundImage.png" />
+    <Image Include="category.png" />
+    <Image Include="del.png" />
+    <Image Include="edit.png" />
+    <Image Include="edit_acc.png" />
+    <Image Include="edit_menu.png" />
+    <Image Include="log_out.png" />
+    <Image Include="next_order.png" />
+    <Image Include="orders.png" />
+    <Image Include="order_done.png" />
+    <Image Include="rest_icon.png" />
+    <Image Include="settings.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
@@ -197,6 +215,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditFoodMenu.resx">
       <DependentUpon>EditFoodMenu.h</DependentUpon>
+      <DeploymentContent>true</DeploymentContent>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
@@ -206,6 +225,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.h</DependentUpon>
+      <DeploymentContent>true</DeploymentContent>
     </EmbeddedResource>
     <EmbeddedResource Include="SmallAddingPage.resx">
       <DependentUpon>SmallAddingPage.h</DependentUpon>

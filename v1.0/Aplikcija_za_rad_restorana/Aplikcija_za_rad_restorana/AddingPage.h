@@ -208,6 +208,7 @@ namespace CppCLRWinFormsProject {
 		MaximizeBox = false;
 		MinimizeBox = false;
 		ControlBox = false;
+		this->Text = "";
 	}
 	private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}

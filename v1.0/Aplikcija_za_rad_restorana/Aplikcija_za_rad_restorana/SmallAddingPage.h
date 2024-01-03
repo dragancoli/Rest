@@ -38,6 +38,7 @@ namespace CppCLRWinFormsProject {
 	protected:
 	private: System::Windows::Forms::Label^ NameTextLabel;
 	private: System::Windows::Forms::Button^ ConfirmButtonBox;
+	private: System::Windows::Forms::Button^ Exit_App_Button;
 
 
 	private:
@@ -56,6 +57,7 @@ namespace CppCLRWinFormsProject {
 			this->inputTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->NameTextLabel = (gcnew System::Windows::Forms::Label());
 			this->ConfirmButtonBox = (gcnew System::Windows::Forms::Button());
+			this->Exit_App_Button = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// inputTextBox
@@ -95,6 +97,20 @@ namespace CppCLRWinFormsProject {
 			this->ConfirmButtonBox->UseVisualStyleBackColor = false;
 			this->ConfirmButtonBox->Click += gcnew System::EventHandler(this, &SmallAddingPage::ConfirmButtonBox_Click);
 			// 
+			// Exit_App_Button
+			// 
+			this->Exit_App_Button->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(62)), static_cast<System::Int32>(static_cast<System::Byte>(83)),
+				static_cast<System::Int32>(static_cast<System::Byte>(90)));
+			this->Exit_App_Button->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(249)), static_cast<System::Int32>(static_cast<System::Byte>(170)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)));
+			this->Exit_App_Button->Location = System::Drawing::Point(1, 2);
+			this->Exit_App_Button->Name = L"Exit_App_Button";
+			this->Exit_App_Button->Size = System::Drawing::Size(58, 29);
+			this->Exit_App_Button->TabIndex = 8;
+			this->Exit_App_Button->Text = L"Exit";
+			this->Exit_App_Button->UseVisualStyleBackColor = false;
+			this->Exit_App_Button->Click += gcnew System::EventHandler(this, &SmallAddingPage::Exit_App_Button_Click);
+			// 
 			// SmallAddingPage
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -102,6 +118,7 @@ namespace CppCLRWinFormsProject {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(249)), static_cast<System::Int32>(static_cast<System::Byte>(170)),
 				static_cast<System::Int32>(static_cast<System::Byte>(51)));
 			this->ClientSize = System::Drawing::Size(350, 260);
+			this->Controls->Add(this->Exit_App_Button);
 			this->Controls->Add(this->ConfirmButtonBox);
 			this->Controls->Add(this->NameTextLabel);
 			this->Controls->Add(this->inputTextBox);
@@ -113,14 +130,18 @@ namespace CppCLRWinFormsProject {
 
 		}
 #pragma endregion
+	public: bool Canceled = false;
+	public: bool isCanceled()
+	{
+		return Canceled;
+	}
 	public: System::String^ GetAddingText()
 	{
 		return inputTextBox->Text;
 	}
 	private: System::Void SmallAddingPage_Load(System::Object^ sender, System::EventArgs^ e) {
-		MaximizeBox = false;
-		MinimizeBox = false;
 		ControlBox = false;
+		this->Text = "  ";
 	}
 	private: System::Void NameTextLabel_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -134,6 +155,10 @@ private: System::Void ConfirmButtonBox_Click(System::Object^ sender, System::Eve
 		MessageBox::Show("Promjene izvrsene uspjesno. ");
 		this->Hide();
 	}
+}
+private: System::Void Exit_App_Button_Click(System::Object^ sender, System::EventArgs^ e) {
+	Canceled = true;
+	this->Close();
 }
 };
 }

@@ -90,6 +90,51 @@
     <Image Include="..\..\..\..\OneDrive\Desktop\accPic.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="rest_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="order_done.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="next_order.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="log_out.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="settings.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="orders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="category.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="edit_acc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="edit_menu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="add.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="edit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="del.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="add_button.BackgroundImage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="button1.BackgroundImage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="button2.BackgroundImage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Pizza.txt">

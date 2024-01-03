@@ -1,3 +1,2 @@
- Korisnik1 | Margarita,Margarita,Napoletan,Divola | 27.00 | Neplaceno | Zavrseno |
- Korisnik1 | Hrana1,Hrana2,Napitak1,Napitak2 | 14.50 | Placeno | Zavrseno | 
- Korisnik1 | Hrana1,Hrana2,Napitak1,Napitak2 | 44.50 | Placeno | Zavrseno | 
+ Korisnik1 | Margarita,Margarita,Napoletan,Divola | 27.00 | Zavrseno | 
+ Korisnik1 | Hrana1,Hrana2,Napitak1,Napitak2 | 44.50 | Zavrseno | 
