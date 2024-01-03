@@ -1,4 +1,0 @@
-Coca-cola | Gazirano pice   |  2.50 | 36|
-Fanta     | Gazirano pice   |  2.00 | 21|
-Pepsi     | Gazirano pice   |  2.00 | 17|
-Cappy     | Negazirano pice |  1.00 | 25|
