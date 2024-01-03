@@ -1,0 +1,3 @@
+admin | admin {ALL}
+Ime | Prezime {USER}
+
