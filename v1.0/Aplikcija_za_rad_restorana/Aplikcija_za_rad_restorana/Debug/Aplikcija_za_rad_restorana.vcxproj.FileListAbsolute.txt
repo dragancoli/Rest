@@ -1,0 +1,9 @@
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.vcxproj.AssemblyReference.cache
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.AddingPage.resources
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.Form1.resources
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.MainPage.resources
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.vcxproj.GenerateResource.cache
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.vcxproj.CopyComplete
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.RegisterForm.resources
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.EditFoodMenu.resources
+C:\Users\colic\source\repos\Aplikcija_za_rad_restorana\Aplikcija_za_rad_restorana\Debug\Aplikcija_za_rad_restorana.SmallAddingPage.resources

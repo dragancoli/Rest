@@ -1,4 +1,4 @@
-Margarita | Paradajiz sos i mocarela|  5.00| 14|
-Vegetariana|          Mjesano povrce|  5.50| 9 |
-Divola    |         ljutom kobasicom|  7.00| 13|
-Napoletana|   Rajcice i mocarela sir|  7.00| 11|
+Margarita | Paradajiz sos i mocarela |  5.00 | 14 | 
+Vegetarian |          Mjesano povrce |  5.50 | 9 | 
+Divola    |         ljutom kobasicom |  7.00 | 13 | 
+Napoletan |   Rajcice i mocarela sir |  7.00 | 11 | 

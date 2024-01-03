@@ -25,6 +25,7 @@
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>Aplikcija_za_rad_restorana</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Aplikcija_za_rad_restorana</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -133,6 +134,9 @@
     <ClInclude Include="AddingPage.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="EditFoodMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -141,12 +145,19 @@
     </ClInclude>
     <ClInclude Include="Meni_items.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="RegisterForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="SmallAddingPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddingPage.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
+    <ClCompile Include="EditFoodMenu.cpp" />
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="MainPage.cpp" />
     <ClCompile Include="pch.cpp">
@@ -155,6 +166,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="RegisterForm.cpp" />
+    <ClCompile Include="SmallAddingPage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -177,11 +190,20 @@
     <EmbeddedResource Include="AddingPage.resx">
       <DependentUpon>AddingPage.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditFoodMenu.resx">
+      <DependentUpon>EditFoodMenu.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmallAddingPage.resx">
+      <DependentUpon>SmallAddingPage.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +211,7 @@
     <Text Include="Narudzbe.txt" />
     <Text Include="Pizza.txt" />
     <Text Include="Napitci.txt" />
+    <Text Include="Meni.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
