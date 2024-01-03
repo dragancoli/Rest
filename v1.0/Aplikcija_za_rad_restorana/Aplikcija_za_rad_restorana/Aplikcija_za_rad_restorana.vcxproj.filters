@@ -47,6 +47,9 @@
     <ClInclude Include="SmallAddingPage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CookPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -76,9 +79,15 @@
     <ClCompile Include="SmallAddingPage.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="CookPage.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Desktop\accPic.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -42,7 +42,7 @@ namespace CppCLRWinFormsProject {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ back_button;
-	private: System::Windows::Forms::TextBox^ textBox1;
+
 
 
 	private:
@@ -64,7 +64,6 @@ namespace CppCLRWinFormsProject {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->back_button = (gcnew System::Windows::Forms::Button());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// listView1
@@ -87,7 +86,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->add_button->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(52)), static_cast<System::Int32>(static_cast<System::Byte>(73)),
 				static_cast<System::Int32>(static_cast<System::Byte>(85)));
-			this->add_button->Location = System::Drawing::Point(292, 186);
+			this->add_button->Location = System::Drawing::Point(292, 151);
 			this->add_button->Name = L"add_button";
 			this->add_button->Size = System::Drawing::Size(140, 33);
 			this->add_button->TabIndex = 10;
@@ -99,7 +98,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(52)), static_cast<System::Int32>(static_cast<System::Byte>(73)),
 				static_cast<System::Int32>(static_cast<System::Byte>(85)));
-			this->button1->Location = System::Drawing::Point(292, 137);
+			this->button1->Location = System::Drawing::Point(292, 93);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(140, 33);
 			this->button1->TabIndex = 11;
@@ -131,16 +130,6 @@ namespace CppCLRWinFormsProject {
 			this->back_button->UseVisualStyleBackColor = true;
 			this->back_button->Click += gcnew System::EventHandler(this, &EditFoodMenu::back_button_Click);
 			// 
-			// textBox1
-			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Verdana", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(292, 84);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(181, 32);
-			this->textBox1->TabIndex = 14;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &EditFoodMenu::textBox1_TextChanged);
-			// 
 			// EditFoodMenu
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -148,7 +137,6 @@ namespace CppCLRWinFormsProject {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(249)), static_cast<System::Int32>(static_cast<System::Byte>(170)),
 				static_cast<System::Int32>(static_cast<System::Byte>(51)));
 			this->ClientSize = System::Drawing::Size(570, 477);
-			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->back_button);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -158,7 +146,6 @@ namespace CppCLRWinFormsProject {
 			this->Text = L"EditFoodMenu";
 			this->Load += gcnew System::EventHandler(this, &EditFoodMenu::EditFoodMenu_Load);
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion

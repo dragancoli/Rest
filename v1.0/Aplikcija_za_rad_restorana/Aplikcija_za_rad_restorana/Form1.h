@@ -1,6 +1,7 @@
 #pragma once
 #include "MainPage.h"
 #include "RegisterForm.h"
+#include "CookPage.h"
 
 namespace CppCLRWinFormsProject {
 
@@ -260,26 +261,49 @@ namespace CppCLRWinFormsProject {
 			String^ pass = PasswordTextBox->Text;
 			System::IO::StreamReader^ din = gcnew IO::StreamReader("Nalozi.txt");
 			String^ s = gcnew String("");
-			int index_name = 0;
-			int index_pass = 0;
+			int index_name;
+			int index_desc;
+			int index_price;
+			int index_stock;
 			while ((s = din->ReadLine()) != nullptr)
 			{
+
+				index_name = 0;
+				index_desc = 0;
+				index_price = 0;
+				index_stock = 0;
 
 				for (int i = 0; i < s->Length; i++) {
 					if (s[i] == '|') {
 						if (index_name == 0) {
 							index_name = i;
 						}
-						else if (index_pass == 0) {
-							index_pass = i;
+						else if (index_desc == 0) {
+							index_desc = i;
+						}
+						else if (index_price == 0) {
+							index_price = i;
+						}
+						else if (index_stock == 0) {
+							index_stock = i;
 							break;
 						}
 					}
 				}
-				if (s->Substring(0, index_name) == name && s->Substring(index_name + 1, index_pass))
+				if (s->Substring(0, index_name - 1) == name && s->Substring(index_name + 2, index_desc - index_name - 3) == pass)
 				{
-					MessageBox::Show("Korisnik postoji u bazi. ");
+					if (s->Substring(index_desc + 2, index_price - index_desc - 3) == "USER")
+						MessageBox::Show("Prijavljeni ste. ");
+					else if (s->Substring(index_desc + 2, index_price - index_desc - 3) == "COOK")
+					{
+						MessageBox::Show("Kuvar. ");
+						CookPage^ cp = gcnew CookPage(name,"Kuvar");
+						this->Hide();
+						cp->ShowDialog();
+						this->Show();
+					}
 					in_base = true;
+
 				}
 			}
 

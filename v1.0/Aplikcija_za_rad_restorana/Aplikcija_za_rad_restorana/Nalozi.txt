@@ -1,2 +1,3 @@
 admin | admin | ALL | 0 |
-dragan | dragan123 | USER |  0  | 
+dragan | dragan123 | USER | 0 | 
+Radnik | radnik123 | COOK | 0 |
