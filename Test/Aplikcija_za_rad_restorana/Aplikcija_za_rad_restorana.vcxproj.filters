@@ -38,6 +38,15 @@
     <ClInclude Include="AddingPage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RegisterForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditFoodMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmallAddingPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -58,6 +67,15 @@
     <ClCompile Include="AddingPage.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="RegisterForm.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditFoodMenu.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmallAddingPage.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico">
@@ -75,6 +93,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="Narudzbe.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Meni.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

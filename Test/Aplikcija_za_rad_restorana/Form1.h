@@ -1,5 +1,6 @@
 #pragma once
 #include "MainPage.h"
+#include "RegisterForm.h"
 
 namespace CppCLRWinFormsProject {
 
@@ -43,6 +44,8 @@ namespace CppCLRWinFormsProject {
 	private: System::Windows::Forms::CheckBox^ remember_data;
 	private: System::Windows::Forms::Panel^ color_panel;
 	private: System::Windows::Forms::Button^ Exit_App_Button;
+	private: System::Windows::Forms::Button^ register_button;
+
 
 
 	protected:
@@ -68,6 +71,8 @@ namespace CppCLRWinFormsProject {
 			this->remember_data = (gcnew System::Windows::Forms::CheckBox());
 			this->color_panel = (gcnew System::Windows::Forms::Panel());
 			this->Exit_App_Button = (gcnew System::Windows::Forms::Button());
+			this->register_button = (gcnew System::Windows::Forms::Button());
+			this->color_panel->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// LogInButton
@@ -78,11 +83,11 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->LogInButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(249)), static_cast<System::Int32>(static_cast<System::Byte>(170)),
 				static_cast<System::Int32>(static_cast<System::Byte>(51)));
-			this->LogInButton->Location = System::Drawing::Point(242, 317);
+			this->LogInButton->Location = System::Drawing::Point(81, 290);
 			this->LogInButton->Name = L"LogInButton";
 			this->LogInButton->Size = System::Drawing::Size(279, 59);
 			this->LogInButton->TabIndex = 0;
-			this->LogInButton->Text = L"LogIn";
+			this->LogInButton->Text = L"Prijava";
 			this->LogInButton->UseVisualStyleBackColor = false;
 			this->LogInButton->Click += gcnew System::EventHandler(this, &Form1::LogInButton_Click);
 			// 
@@ -165,9 +170,11 @@ namespace CppCLRWinFormsProject {
 			this->color_panel->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(52)), static_cast<System::Int32>(static_cast<System::Byte>(73)),
 				static_cast<System::Int32>(static_cast<System::Byte>(85)));
 			this->color_panel->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->color_panel->Controls->Add(this->register_button);
+			this->color_panel->Controls->Add(this->LogInButton);
 			this->color_panel->Location = System::Drawing::Point(173, 51);
 			this->color_panel->Name = L"color_panel";
-			this->color_panel->Size = System::Drawing::Size(442, 339);
+			this->color_panel->Size = System::Drawing::Size(461, 367);
 			this->color_panel->TabIndex = 6;
 			this->color_panel->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form1::panel1_Paint);
 			// 
@@ -185,15 +192,33 @@ namespace CppCLRWinFormsProject {
 			this->Exit_App_Button->UseVisualStyleBackColor = false;
 			this->Exit_App_Button->Click += gcnew System::EventHandler(this, &Form1::Exit_App_Button_Click);
 			// 
+			// register_button
+			// 
+			this->register_button->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(52)), static_cast<System::Int32>(static_cast<System::Byte>(73)),
+				static_cast<System::Int32>(static_cast<System::Byte>(85)));
+			this->register_button->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->register_button->FlatAppearance->BorderSize = 0;
+			this->register_button->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->register_button->Font = (gcnew System::Drawing::Font(L"Verdana", 10.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->register_button->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(249)), static_cast<System::Int32>(static_cast<System::Byte>(170)),
+				static_cast<System::Int32>(static_cast<System::Byte>(51)));
+			this->register_button->Location = System::Drawing::Point(267, 207);
+			this->register_button->Name = L"register_button";
+			this->register_button->Size = System::Drawing::Size(161, 29);
+			this->register_button->TabIndex = 1;
+			this->register_button->Text = L"Registruj se";
+			this->register_button->UseVisualStyleBackColor = false;
+			this->register_button->Click += gcnew System::EventHandler(this, &Form1::register_button_Click);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(249)), static_cast<System::Int32>(static_cast<System::Byte>(170)),
 				static_cast<System::Int32>(static_cast<System::Byte>(51)));
-			this->ClientSize = System::Drawing::Size(862, 425);
+			this->ClientSize = System::Drawing::Size(876, 449);
 			this->Controls->Add(this->Exit_App_Button);
-			this->Controls->Add(this->LogInButton);
 			this->Controls->Add(this->remember_data);
 			this->Controls->Add(this->PasswordTextBox);
 			this->Controls->Add(this->password_label);
@@ -203,15 +228,16 @@ namespace CppCLRWinFormsProject {
 			this->Name = L"Form1";
 			this->Text = L"Form1";
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			this->color_panel->ResumeLayout(false);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
+		MaximizeBox = false;
 	}
 	private: System::Void LogInButton_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("Admin.");
 		System::String^ admin = "admin";
 		if (NameTextBox->Text == admin && PasswordTextBox->Text == admin)
 		{
@@ -220,11 +246,46 @@ namespace CppCLRWinFormsProject {
 				NameTextBox->Clear();
 				PasswordTextBox->Clear();
 			}
+			MessageBox::Show("Admin.");
 			this->Hide();
 			
 			MainPage^ main = gcnew MainPage();
 			main->ShowDialog();
 			this->Show();
+		}
+		else
+		{
+			bool in_base = false;
+			String^ name = NameTextBox->Text;
+			String^ pass = PasswordTextBox->Text;
+			System::IO::StreamReader^ din = gcnew IO::StreamReader("Nalozi.txt");
+			String^ s = gcnew String("");
+			int index_name = 0;
+			int index_pass = 0;
+			while ((s = din->ReadLine()) != nullptr)
+			{
+
+				for (int i = 0; i < s->Length; i++) {
+					if (s[i] == '|') {
+						if (index_name == 0) {
+							index_name = i;
+						}
+						else if (index_pass == 0) {
+							index_pass = i;
+							break;
+						}
+					}
+				}
+				if (s->Substring(0, index_name) == name && s->Substring(index_name + 1, index_pass))
+				{
+					MessageBox::Show("Korisnik postoji u bazi. ");
+					in_base = true;
+				}
+			}
+
+			din->Close();
+			if(!in_base)
+				MessageBox::Show("Pogresna sifra ili korisnicko ime. ");
 		}
 	}
 	private: System::Void richTextBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
@@ -239,6 +300,12 @@ private: System::Void name_label_Click(System::Object^ sender, System::EventArgs
 }
 private: System::Void Exit_App_Button_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+private: System::Void register_button_Click(System::Object^ sender, System::EventArgs^ e) {
+	RegisterForm^ reg = gcnew RegisterForm();
+	this->Hide();
+	reg->ShowDialog();
+	this->Show();
 }
 };
 }

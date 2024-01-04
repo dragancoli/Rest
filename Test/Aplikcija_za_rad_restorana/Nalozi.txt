@@ -1,2 +1,2 @@
-admin | admin {ALL}
-Ime | Prezime {USER}
+admin | admin | ALL | 0 |
+dragan | dragan123 | USER |  0  | 
