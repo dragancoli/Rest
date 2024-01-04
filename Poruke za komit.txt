@@ -1,0 +1,9 @@
+2 - #6 Omogucavanje uredjivanje kategorije proizvoda
+3 - #2 Popravka problema prilikom prijave, 
+4 - #7 Omogucavanje pregled korisnika sistema
+5 - #11 Omogucavnje pregleda svih narudzbi
+6 -  #5 Omogucavanje uredjivanja menija
+7 - #4 Omogucavanje registracije na sistem,  
+8 - #2 Omogucavanje kuvarima prijavu na sistem
+9 - #17 Kreiranje forme za kuvara, #18 Automatska izmjena potrosenih zaliha
+10 - #17 Omogucivanje primanje nezavrsene narudzbe i oznacavanje zavrsene narudzbe
