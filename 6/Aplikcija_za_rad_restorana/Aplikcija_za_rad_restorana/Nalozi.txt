@@ -1,2 +1,0 @@
-admin | admin | ALL | 0 |
-dragan | dragan123 | USER |  0  | 
